@@ -5,21 +5,21 @@
 # 		dependencies are the object files that build the program
 #
 
-scpm: scpm.o FileManager.o FileWrapper.o
-	g++ -o scpm scpm.o FileManager.o FileWrapper.o
+bin/scpm: obj/scpm.o obj/FileManager.o obj/FileWrapper.o
+	g++ -o bin/scpm obj/scpm.o obj/FileManager.o obj/FileWrapper.o
 
 # now define how each object file is a target and list dependencies
 
-scpm.o: scpm.cpp scpm.h
-	g++ -c scpm.cpp
+obj/scpm.o: scpm.cpp scpm.h
+	g++ -o obj/scpm.o -c scpm.cpp
 
-FileManager.o: FileManager.cpp FileManager.h
-	g++ -c FileManager.cpp
+obj/FileManager.o: FileManager.cpp FileManager.h
+	g++ -o obj/FileManager.o -c FileManager.cpp
 
-FileWrapper.o: FileWrapper.cpp FileWrapper.h
-	g++ -c FileWrapper.cpp
+obj/FileWrapper.o: FileWrapper.cpp FileWrapper.h
+	g++ -o obj/FileWrapper.o -c FileWrapper.cpp
 
 clean:
-	rm scpm scpm.o FileManager.o FileWrapper.o
+	rm bin/scpm obj/scpm.o obj/FileManager.o obj/FileWrapper.o
 
 
