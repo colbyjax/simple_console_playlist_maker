@@ -1,5 +1,5 @@
-simple_console_playlist_maker
-=============================
+SCPM - (simple console playlist maker)
+======================================
 
 Console based application designed to build music playlists.  Specifically useful for headless linux servers.
 
@@ -24,7 +24,7 @@ Using Application
 * n   - (Next) This will scroll through the next page of Entries in the directory if more exist.  Will scroll through the beginning again.
 * u   - (Up) Go up a directory
 * d # - (Delete) Where '#' is the number in the playlist.  This will remove entry from playlist
-* #   - Where '#' is the number in the Music Directory.  This will add an entry to the playlist if a file.  If the entry is a directory, it will navigate to the directory and show its entries
+* #   - (Number) Where '#' is the number in the Music Directory.  This will add an entry to the playlist if a file.  If the entry is a directory, it will navigate to the directory and show its entries
 * s   - (Save) Saves the Playlist.  File to save is configurable in 'conf' or command line.
 * q   - (Quit) Exits the Program
 
