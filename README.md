@@ -5,12 +5,12 @@ Console based application designed to build music playlists.  Specifically usefu
 
 Starting Application
 =====================
-scpm [option] target
-* i.e. scpm (This will default to entries in 'conf' file)
-* i.e. scpm -m /home/music -f /home/playlists/playlist.m3u (Overrides entries in conf file)
-
+<pre><code>scpm [option] target
+scpm (This will default to entries in 'conf' file)
+scpm -m /home/music -f /home/playlists/playlist.m3u (Overrides entries in conf file)</code></pre>
+<i>
 -m    Root of music directory
--f    File to store playlist
+-f    File to store playlist</i>
 
 Using Application
 =================
